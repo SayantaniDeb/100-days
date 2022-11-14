@@ -29,5 +29,28 @@ public class Fourth {
         
     }
     }
+    //Remove items from LL
+    class Solution3 {
+        public ListNode removeElements(ListNode head, int val) {
+            ListNode temp=head;
+            if(head==null){
+                return null;
+            }
+            ListNode dummy=new ListNode();
+            ListNode curr=dummy;
+            dummy.next=head;
+            while(curr.next!=null){
+                if(curr.next.val==val){
+                    curr.next=curr.next.next;
+                }
+                else{
+                    curr=curr.next;
+                }
+            }
+            return dummy.next;
+           
+            
+        }
+    }
 
 }
