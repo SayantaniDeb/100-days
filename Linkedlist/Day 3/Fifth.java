@@ -1,4 +1,4 @@
-package Linkedlist.Day 3;
+package Linkedlist.Day3;
 
 public class Fifth {
     class Solution {
